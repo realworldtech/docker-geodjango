@@ -21,5 +21,9 @@ CMD /usr/bin/launch-nginx.sh
 
 You may also want to use manage.py runserver while testing, rather than uWSGI and nGINX.
 
+While you could run a local postgres-gis server by installign the additional packages,
+you probably will be using an external postgis server, possibly from another image such as
+`kartoza/postgis:9.4-2.1`.
+
 The uWSGI docs are invaluable for working out how to make this work. Have a look at
 http://uwsgi-docs.readthedocs.org/en/latest/tutorials/Django_and_nginx.html
